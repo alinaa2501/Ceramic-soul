@@ -1,8 +1,11 @@
 @use '/src/sass/base/variables.scss' as *;
 
 .works {
-  padding-top: 60px;
-  padding-bottom: 100px;
+  padding: 60px 0px 95px;
+
+  &__wrapper {
+    position: relative;
+  }
 
   &__slider {
     margin-top: 40px;
@@ -18,6 +21,7 @@
 
   .swiper-pagination {
     bottom: -35px;
+    position: absolute;
   }
 
   .swiper-pagination-bullet {
@@ -36,6 +40,8 @@
 
 @media screen and (min-width: 768px) {
   .works {
+    padding-bottom: 90px;
+
     &__slider {
       margin-top: 45px;
     }
@@ -95,7 +101,8 @@
 
 @media screen and (min-width: 1920px) {
   .works {
-    padding-top: 100px;
+    padding: 100px 0 130px;
+
     &__slider {
       margin: 80px 85px 0 85px;
     }
