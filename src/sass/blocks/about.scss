@@ -1,0 +1,56 @@
+@use '/src/sass/base/variables.scss' as *;
+@use '/src/sass/base/mixins.scss' as *;
+
+.about {
+  padding: 50px 0 60px;
+
+  &__title {
+    margin-top: 60px;
+  }
+
+  &__info {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+  }
+
+  &__text {
+    color: $dark;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    &__img {
+      width: 600px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    &__info {
+      flex-wrap: nowrap;
+      gap: 20px;
+    }
+
+    &__img {
+      width: 550px;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .about {
+    padding: 40px 0 100px;
+
+    &__text {
+      font-size: 20px;
+    }
+  }
+}
