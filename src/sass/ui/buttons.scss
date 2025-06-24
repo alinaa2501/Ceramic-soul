@@ -25,7 +25,7 @@
   }
 }
 
-.btn-submit{
+.btn-submit {
   @include button;
   width: 90px;
   height: 40px;
@@ -36,6 +36,23 @@
   &:disabled {
     color: $ui-disabled;
     border: 1px solid $ui-disabled;
+  }
+}
+
+.btn-read {
+  @include button;
+  color: $dark;
+  width: 145px;
+  height: 32px;
+  font-size: 14px;
+  font-size: 14px;
+  line-height: normal;
+  border: 1px solid $dark;
+
+  &:focus {
+    border: 1px solid $ceramic;
+    outline: 1px solid $ceramic;
+
   }
 }
 
@@ -63,6 +80,17 @@
     &:hover {
       border: 1px solid $ceramic;
       color: $ceramic;
+    }
+  }
+
+  .btn-read {
+    &:hover {
+      border: 1px solid $ceramic;
+      color: $ceramic;
+    }
+
+    &:active {
+      border: 1px solid $ceramic;
     }
   }
 }
