@@ -1,9 +1,20 @@
 @use '/src/sass/base/variables.scss' as *;
 
+
+
+
 .footer {
   padding: 50px 0;
   background-color: $dark;
   color: $light;
+
+  .just-validate-error-field {
+    border-bottom: 1px solid $ui-error;
+    
+    &::placeholder {
+			color: $ui-error;
+		}
+  }
 
   &__wrapper {
     display: flex;
