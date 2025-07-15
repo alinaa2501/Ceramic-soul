@@ -61,7 +61,7 @@
     &__potter {
       display: block;
       position: absolute;
-      width: clamp(450px, 37.5vw,640px);
+      width: clamp(450px, 37.5vw, 640px);
       height: 633px;
       object-fit: cover;
       top: 0;
@@ -74,6 +74,7 @@
 
     &__cta {
       margin-top: 0px;
+      animation: slideIn 3s;
     }
   }
 }
@@ -81,7 +82,7 @@
 @media screen and (min-width: 1920px) {
   .promo {
     padding-top: 40px;
-    
+
     &__potter {
       width: 640px;
       height: 900px;
